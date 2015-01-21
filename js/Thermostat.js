@@ -30,7 +30,8 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 
 Thermostat.prototype.powerSavingToggle = function() {
   (this.powerSaving) ? this.powerSaving = false : this.powerSaving = true;
-  // (this.temperature > 25) ? this.temperature = 25;
+  (this.powerSaving && this.temperature >= 26) ? this.temperature = 25 : this.temperature;
+
 };
 
 Thermostat.prototype.powerSavingOnOffText = function() {
