@@ -19,6 +19,4 @@ Create a thermostat using Javascript
 - Javascript
 - Jasmine
 
-# Collaborators
-- [Jack Rubio](https://github.com/JackRubio26)
-- [Matteo Manzo](https://github.com/matteomanzo)
+

@@ -38,7 +38,7 @@ describe('Thermostat', function() {
 
   describe('toggle button', function() {
 
-    it('should change the savinPower status from true to false', function() {
+    it('should change the savingPower status from true to false', function() {
       expect(thermostat.powerSaving).toBe(true);
       thermostat.powerSavingToggle();
       expect(thermostat.powerSaving).toBe(false);
