@@ -1,23 +1,75 @@
+/*@import url('normalize.css');
+@import url('grid.css');*/
+
 main {
   width: 80%;
   margin: 0 auto;
 }
 
 body {
-  background-color: #bdc3c7  ;
+    /*background-color:  #6495ed;*/
+    background-image: url("http://www.bluebayrestaurant.co.nz/images/bgSlider/img01.jpg");
 }
 
-.temp-buttons {
+#degSym {
+  text-shadow: 5px 5px 5px #F8F8F8;
+  color: skyblue;
+}
+.increase-temp {
   display: inline-block;
   margin-left: 43.5%;
+  background-color:skyblue;
+  color:white;
 }
 
-.PSM-toggle {
-  margin-left: 46.5%;
+.reset-temp {
+  display: inline-block;
+  background-color:skyblue;
+  color:white;
+  font-size: 100%;
+}
+
+.decrease-temp {
+  display: inline-block;
+  background-color:skyblue;
+  color:white;
+  background-size: 10px;
+}
+
+.PSMtoggle {
+  margin-left: 44%;
+  background-color:lightgreen;
+  color:white;
+  font-size: 150%;
 }
 
 h1 {
   text-align: center;
-  font-size: 676%;
+  font-size: 800%;
   margin-bottom: 0;
+  text-shadow: 5px 5px 5px #F8F8F8;
+}
+
+.textInfo {
+  color: red;
+}
+
+.low {
+  color: green;
+}
+
+.medium {
+  color: yellow;
+}
+
+.high {
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  font-size: 376%;
+  margin-bottom: 0;
+  color: skyblue;
+  text-shadow: 5px 5px 5px #F8F8F8;
 }

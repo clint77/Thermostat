@@ -4,7 +4,8 @@ var Thermostat = function() {
   this.powerSaving = true;
   this.savingOffMaxTemp = 32;
   this.savingOnMaxTemp = 25;
-  this.powerSavingText = "ON";
+  this.powerSavingText = "PSM ON";
+  this.tempColor = "yellow";
 };
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
@@ -30,28 +31,28 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 
 Thermostat.prototype.powerSavingToggle = function() {
   (this.powerSaving) ? this.powerSaving = false : this.powerSaving = true;
-  (this.powerSaving && this.temperature >= 26) ? this.temperature = 25 : this.temperature;
+  (this.powerSaving && this.temperature > 25) ? this.temperature = 25 : this.temperature;
 
 };
 
 Thermostat.prototype.powerSavingOnOffText = function() {
-  (this.powerSaving) ? this.powerSavingText = "ON" : this.powerSavingText = "OFF";
+  (this.powerSaving) ? this.powerSavingText = "PSM ON " : this.powerSavingText = "PSM OFF";
 };
 
 Thermostat.prototype.reset = function() {
   this.powerSaving = true;
-  this.powerSavingText = "ON"
+  this.powerSavingText = "PSM ON "
   this.temperature = 20;
 };
 
-Thermostat.prototype.colorStatus = function() {
+Thermostat.prototype.textColor = function() {
   if (this.temperature < 18) {
-    return "green"
-  }
+    return "low"
+  } 
   else if (this.temperature > 25) {
-    return "red"
-  }
+    return "high"
+  } 
   else {
-    return "yellow"
+    return "medium"
   }
 };
