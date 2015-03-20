@@ -1,6 +1,6 @@
 Thermostat
 ==========
-Create a thermostat using Javascript
+Create a thermostat using Javascript and playing around with HTML, CSS, JQuery and some SVGs. 
 
 # Features
 
